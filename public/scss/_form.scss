@@ -1,0 +1,20 @@
+.form {
+	&-control {
+		height: calc(1.806em + 0.75rem + 2px);
+
+		&:focus {
+			border-color: $primary;
+			box-shadow: 0 0 0 1px $primary;
+		}
+	}
+}
+
+.custom {
+	&-checkbox {
+		.custom-control-label {
+			&:before {
+				border-radius: 100%;
+			}
+		}
+	}
+}

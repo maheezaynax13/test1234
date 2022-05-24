@@ -1,0 +1,103 @@
+@import './variables';
+@import './root';
+@import './fonts';
+@import './bootstrap';
+@import './slick-slider';
+@import './loader';
+@import './grid';
+@import './tabs';
+@import './modal';
+@import './dropdown';
+@import './card';
+@import './form';
+
+body {
+	position: relative;
+
+	&.bg-light {
+		background-color: #fafafa;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: $font-size-base-xs;
+	}
+}
+
+.text-light-gray {
+	color: $light-gray;
+}
+
+#bKashFrameWrapper {
+	width: 100vw;
+}
+
+.secondary-font {
+	font-family: 'Jenna Sue', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.font-weight-semibold {
+	font-weight: 600;
+}
+
+// Buttons
+.btn {
+	&-nagad {
+		background-color: #ed1c24 !important;
+		border-color: #e2136e !important;
+
+		&:hover {
+			opacity: 0.95;
+		}
+	}
+
+	&-bkash {
+		background-color: #e2136e !important;
+		border-color: #e2136e !important;
+
+		&:hover {
+			opacity: 0.95;
+		}
+	}
+}
+
+.VerticalScroller {
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: 10px;
+		background-color: #ececec;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #d6d6d6;
+		border-radius: 10px;
+	}
+
+	// &::-webkit-scrollbar-thumb:hover {
+	// 	background: #029c50;
+	// }
+
+	.custom-control-label {
+		color: var(--secondary);
+	}
+}
+
+.VerticalScrollerPrimary {
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: 10px;
+		background-color: #ececec;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--primary);
+		border-radius: 10px;
+	}
+}

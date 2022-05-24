@@ -1,0 +1,206 @@
+.productSlider {
+    .slick {
+        &-slide img {
+            display: block;
+        }
+        &-arrow {
+            width: 24px;
+            height: 30px;
+            background-color: rgba(26, 26, 26, 0.35);
+            z-index: 1;
+            &.slick-disabled {
+                display: none !important;
+            }
+            &:before {
+                opacity: 1;
+                content: '';
+                width: 8px;
+                height: 14px;
+                display: block;
+                margin: 0 auto;
+                background: url('/images/arrow-right.svg') no-repeat;
+            }
+        }
+        &-prev {
+            left: -11.25px;
+            border-radius: 0 50px 50px 0;
+            &:before {
+                transform: rotate(-180deg);
+            }
+            &:focus,
+            &:hover {
+                background: rgba(26, 26, 26, 0.35);
+            }
+        }
+        &-next {
+            right: -11.25px;
+            border-radius: 50px 0 0 50px;
+            &:focus,
+            &:hover {
+                background: rgba(26, 26, 26, 0.35);
+            }
+        }
+    }
+}
+
+.HeroSlider {
+    width: 100%;
+    .slick {
+        &-dots {
+            bottom: 20px;
+            li {
+                width: 12px;
+                margin: 0 5px;
+                button {
+                    width: 12px;
+                    height: 12px;
+                    padding: 0;
+                    margin: 0;
+                    &:before {
+                        content: '';
+                        width: 12px;
+                        height: 12px;
+                        font-size: 12px;
+                        border-radius: 100%;
+                        background-color: $dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.brandSlider {
+    .slick {
+        &-arrow {
+            top: -25px;
+            right: 0;
+            left: inherit;
+            background-color: transparent;
+            &:before {
+                content: '';
+                opacity: 1;
+                width: 35px;
+                height: 30px;
+                display: block;
+                background-color: var(--primary);
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+        }
+        &-prev {
+            width: 35px;
+            height: 30px;
+            right: 42px;
+            &:before {
+                background-image: url('/images/chevron-left-white.svg');
+                border-radius: 20px 0 0 20px;
+            }
+        }
+        &-next {
+            width: 35px;
+            height: 30px;
+            right: 6px;
+            &:before {
+                background-image: url('/images/chevron-right-white.svg');
+                border-radius: 0 20px 20px 0;
+            }
+        }
+        &-disabled {
+            &:before {
+                opacity: 0.25;
+            }
+        }
+    }
+}
+
+.storeSlider {
+    margin: 0 -7.5px;
+    &Item {
+        padding: 0 7.5px;
+    }
+    .slick {
+        &-prev {
+            left: 5px;
+        }
+        &-next {
+            right: 5px;
+        }
+    }
+}
+
+.homepageBlogSlider {
+    width: 100%;
+    .slick {
+        &-slide img {
+            display: block;
+        }
+        &-arrow {
+            width: 24px;
+            height: 30px;
+            background-color: var(--primary);
+            z-index: 1;
+            &.slick-disabled {
+                display: none !important;
+            }
+            &:before {
+                opacity: 1;
+                content: '';
+                width: 8px;
+                height: 14px;
+                display: block;
+                margin: 0 auto;
+                background: url('/images/chevron-right-white.svg') no-repeat;
+            }
+        }
+        &-prev {
+            left: -15.8px;
+            border-radius: 50px 0 0 50px;
+            &:before {
+                transform: rotate(-180deg);
+            }
+            &:focus,
+            &:hover {
+                background-color: var(--primary);
+            }
+        }
+        &-next {
+            right: -15.8px;
+            border-radius: 0 50px 50px 0;
+            &:focus,
+            &:hover {
+                background-color: var(--primary);
+            }
+        }
+        &-dots {
+            li {
+                width: 12px;
+                margin: 0 5px;
+                button {
+                    width: 12px;
+                    height: 12px;
+                    padding: 0;
+                    margin: 0;
+                    &:before {
+                        content: '';
+                        width: 12px;
+                        height: 12px;
+                        font-size: 12px;
+                        border-radius: 100%;
+                        background-color: $dark;
+                    }
+                    &:hover {
+                        &:before {
+                            background-color: var(--primary);
+                        }
+                    }
+                }
+                &.slick-active>button {
+                    &:before {
+                        background-color: var(--primary);
+                    }
+                }
+            }
+        }
+    }
+}

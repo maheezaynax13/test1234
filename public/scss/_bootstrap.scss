@@ -1,0 +1,16 @@
+// colors
+$primary: #00b55b;
+$danger: #ff0065;
+$dark: #4d4d4d;
+$body-bg: var(--light) !default;
+$body-color: #2b2b2b !default;
+
+// Grid columns
+$grid-gutter-width: 15px !default;
+
+// typography
+$font-size-base: 0.875rem !default; // typically `14px`
+$font-size-base-xs: 0.813rem !default; // typically `13px`
+$font-family-sans-serif: 'Segoe UI', sans-serif !default;
+
+@import '~bootstrap/scss/bootstrap.scss';

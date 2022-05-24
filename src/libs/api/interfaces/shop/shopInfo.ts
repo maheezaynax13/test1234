@@ -1,0 +1,34 @@
+export interface IShopInfo {
+	model: string;
+	top_seller: number;
+	z_id: string;
+	seller_logo: string;
+	store_banner: string;
+	sellerID: string;
+	firstName: string;
+	lastName: string;
+	seller_full_name: string;
+	email: string;
+	shop_name: string;
+	holiday_mode: boolean;
+	holiday_period_start: Date;
+	holiday_period_end: Date;
+	status: string;
+	followerCount: number;
+	categoryId: string;
+	slug: string;
+	region: string;
+	city: string;
+	area: string;
+	road: string;
+	country: string;
+	building_info: string;
+	floor?: any;
+	storeNo: string;
+	furtherInfo: string;
+	googleMapId?: any;
+	number: string;
+	createdAt: Date;
+	updatedAt: Date;
+	id: string;
+}
